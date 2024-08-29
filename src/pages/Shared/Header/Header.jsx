@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from '../../../assets/logo.png';
-import { Button, Container, Image, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Image, } from 'react-bootstrap';
 import moment from 'moment';
 import Marquee from 'react-fast-marquee';
-import { Link } from 'react-router-dom';
+
+
 
 const Header = () => {
+
     return (
         <Container>
             <div className='text-center mt-4'>
@@ -20,22 +22,7 @@ const Header = () => {
                     I can be a React component, multiple React components, or just some text.
                 </Marquee>
             </div>
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary mt-2">
-                <Container>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="mx-auto">
-                            <Link className='me-4 text-decoration-none' to={'/'}>Home</Link>
-                            <Link to={'/about'}>About</Link>
-                            <Link> </Link>
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="#deets">Profile</Nav.Link>
-                            <Button variant="outline-secondary">Login</Button>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+
         </Container>
     );
 };
